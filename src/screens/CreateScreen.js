@@ -11,7 +11,7 @@ const CreateScreen = ({ navigation }) => {
             <Text style={styles.label} >Blog Basligi Giriniz: </Text>
             <TextInput style={styles.input} value={title} onChangeText={(text) => setTitle(text)} />
             <Text style={styles.label} >Blog Icerigini Giriniz: </Text>
-            <TextInput style={styles.input} value={content} onChangeText={(text) => setContent(text)} />
+            <TextInput style={styles.input} value={content} multiline={true} onChangeText={(text) => setContent(text)} />
             <Button 
                 title="Blog Ekle"
                 onPress={() =>{

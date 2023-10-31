@@ -31,12 +31,16 @@ const IndexScreen = ({navigation}) => {
 };
 
 IndexScreen.navigationOptions = ({navigation}) => {
-  return{
-    headerRight: <TouchableOpacity onPress={() => navigation.navigate('Create')}>
+  return {
+    headerRight: () => (
+      <TouchableOpacity onPress={() => navigation.navigate('Create')}>
         <Feather name="file-plus" size={24} paddingHorizontal={10} color="black" />
       </TouchableOpacity>
+    ),
   };
 };
+
+
 
 const styles = StyleSheet.create({
   row: {
